@@ -1,14 +1,14 @@
 import './App.css';
-import { Component } from 'react';
-
-class App extends Component{
-  render(){
-  return (
+import Signup from './components/Signup';
+import React,{Component} from "react";
+ class App extends Component {
+  render (){
+    return(
     <div className="App">
-     <h5>E-tickets</h5>
+      <Signup/> 
     </div>
   );
-  }
+ }
 }
 export default App;
 
