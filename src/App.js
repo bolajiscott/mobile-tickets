@@ -6,6 +6,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+import "./App.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -69,13 +72,31 @@ export default function TabsWrappedLabel() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index="one">
-        Item One
+      <form className={classes.root} noValidate autoComplete="off">
+      <TextField id="outlined-basic" label="First-Name" variant="standard" /> <p>
+
+      </p>
+      <TextField id="outlined-basic" label="Last-Name" variant="standard" /><p>
+        </p> 
+      <TextField id="outlined-basic" label="Phone-Number" variant="standard" /><p>
+        </p> 
+      <TextField id="outlined-basic" label="E-mail" variant="standard" /> <p>
+        </p>
+      <TextField id="outlined-basic" label="password" type="password" variant="standard" />
+      <p></p>
+      <Button color="primary">Register</Button>
+      
+    </form>
       </TabPanel>
       <TabPanel value={value} index="two">
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index="three">
-        Item Three
+      <form className={classes.root} noValidate autoComplete="off">
+      <TextField id="outlined-basic" label="UserName" variant="standard" /><p>
+        </p>
+
+      <TextField id="outlined-basic" label="password" type="password" variant="standard" />
+      <p></p>
+      <Button color="primary">Login</Button>
+    </form>
       </TabPanel>
     </div>
   );
