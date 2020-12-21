@@ -101,7 +101,7 @@ export default function TabsWrappedLabel() {
     </form>
       </TabPanel>
     </div>
-    <button onClick ={()=>console.log('clickmenow')}>click</button>
+    
   );
 }
 
