@@ -9,6 +9,7 @@ import Box from '@material-ui/core/Box';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import "./App.css";
+import { red } from '@material-ui/core/colors';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -71,7 +72,7 @@ export default function TabsWrappedLabel() {
           <Tab value="two" label="LogIn" {...a11yProps('two')} />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index="one">
+      <TabPanel id="rt" value={value} index="one">
       <form className={classes.root} noValidate autoComplete="off">
       <TextField id="outlined-basic" label="First-Name" variant="standard" /> <p>
 
@@ -84,21 +85,23 @@ export default function TabsWrappedLabel() {
         </p>
       <TextField id="outlined-basic" label="password" type="password" variant="standard" />
       <p></p>
-      <Button color="primary">Register</Button>
+      <button type="button" class="btn btn-success">Login</button>
+      
       
     </form>
       </TabPanel>
-      <TabPanel value={value} index="two">
+      <TabPanel id ="rt" value={value} index="two">
       <form className={classes.root} noValidate autoComplete="off">
       <TextField id="outlined-basic" label="UserName" variant="standard" /><p>
         </p>
 
       <TextField id="outlined-basic" label="password" type="password" variant="standard" />
       <p></p>
-      <Button color="primary">Login</Button>
+      <button type="button" class="btn btn-success">Login</button>
     </form>
       </TabPanel>
     </div>
+    <button onClick ={()=>console.log('clickmenow')}>click</button>
   );
 }
 
