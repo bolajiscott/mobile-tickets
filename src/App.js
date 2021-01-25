@@ -10,7 +10,6 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import "./App.css";
 import { red } from '@material-ui/core/colors';
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -74,34 +73,35 @@ export default function TabsWrappedLabel() {
       </AppBar>
       <TabPanel id="rt" value={value} index="one">
       <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="outlined-basic" label="First-Name" variant="standard" /> <p>
+      <TextField id="outlined-basic" label="First-Name" variant="filled" /> <p>
 
       </p>
-      <TextField id="outlined-basic" label="Last-Name" variant="standard" /><p>
+      <TextField id="outlined-basic" label="Last-Name" variant="filled" /><p>
         </p> 
-      <TextField id="outlined-basic" label="Phone-Number" variant="standard" /><p>
+      <TextField id="outlined-basic" label="Phone-Number" variant="filled" /><p>
         </p> 
-      <TextField id="outlined-basic" label="E-mail" variant="standard" /> <p>
+      <TextField id="outlined-basic" label="E-mail" variant="filled" /> <p>
         </p>
-      <TextField id="outlined-basic" label="password" type="password" variant="standard" />
+      <TextField id="outlined-basic" label="password" type="password" variant="filled" />
       <p></p>
-      <button type="button" class="btn btn-success">Login</button>
+      <button id="btn" type="button" class="btn btn-success">Signup</button>
       
       
     </form>
       </TabPanel>
       <TabPanel id ="rt" value={value} index="two">
       <form className={classes.root} noValidate autoComplete="off">
-      <TextField id="outlined-basic" label="UserName" variant="standard" /><p>
+      <TextField id="outlined-basic" label="UserName" variant="filled" /><p>
         </p>
 
-      <TextField id="outlined-basic" label="password" type="password" variant="standard" />
+      <TextField id="outlined-basic" label="password" type="password" variant="filled" />
       <p></p>
-      <button type="button" class="btn btn-success">Login</button>
+      <button id="btn" type="button" class="btn btn-success">Login</button>
     </form>
       </TabPanel>
     </div>
     
-  );
+  ); 
 }
+
 
